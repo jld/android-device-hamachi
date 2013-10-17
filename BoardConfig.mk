@@ -5,12 +5,9 @@ TARGET_NO_KERNEL := true
 BOARD_KERNEL_PAGESIZE = 2048
 BOARD_KERNEL_SPARESIZE = 64
 
-ifneq (,$(wildcard vendor/qcom/hamachi/kernel))
-TARGET_PREBUILT_KERNEL := vendor/qcom/hamachi/kernel
 BOARD_KERNEL_BASE := 200000
 TARGET_NO_KERNEL := false
 BOARD_KERNEL_CMDLINE := androidboot.hardware=hamachi
-endif
 
 TARGET_USERIMAGES_USE_EXT4 := false
 
